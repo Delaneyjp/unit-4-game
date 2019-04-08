@@ -133,4 +133,4 @@ $(function () {
 
 });
 
-//-------END OF PLAY GAME-----
+//------END OF PLAY GAME----
