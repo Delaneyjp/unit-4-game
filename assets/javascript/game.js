@@ -16,7 +16,7 @@ $(function () {
     var wins = 0;
     var losses = 0;
     var gemArray = []
-    var totalScore = "";
+    var totalScore = 0;
     var blackAmount = "";
     var blueAmount = "";
     var whiteAmount = "";
@@ -80,6 +80,8 @@ $(function () {
 
 
     function playGame() {
+        wins = "";
+        losses = "";
 
 
         // 3)   BUTTON CLICKS (ADD TO TOTAL SCORE)
@@ -119,13 +121,18 @@ $(function () {
 
         // 4)   Count Wins/Losses & reset game
         function checkWin() {
+            console.log("random number is " + randNum);
             if (totalScore === randNum) {
                 wins++;
+                console.log(wins);
                 reset();
-            } else if (totalScore > randNum) {
+                return wins;
+            } if (totalScore > randNum) {
                 losses++;
+                console.log(losses);
                 reset();
-            };
+                return losses;
+            }
         };
         checkWin();
     };
