@@ -1,5 +1,6 @@
+$(document).ready(function () {
 
-$(function () {
+
 
 
 
@@ -21,18 +22,21 @@ $(function () {
     var blueAmount = "";
     var whiteAmount = "";
     var yellowAmount = "";
+    var hasFinished = false;
 
     // -----ON PAGE LOAD [function reset()]------
 
     function reset() {
         gemArray = []
         totalScore = 0;
+        hasFinished = false;
 
         blackAmount = 0;
         blueAmount = 0;
         whiteAmount = 0;
         yellowAmount = 0;
 
+        $("#totalScore").html(totalScore);
 
         $("#wins").html(wins);
         $("#losses").html(losses);
@@ -93,6 +97,8 @@ $(function () {
             console.log(blackScore);
             totalScore = (totalScore + blackScore);
             $("#totalScore").html(totalScore);
+            console.log("total score is " + totalScore);
+            checkWin();
         });
         //      #gemBlue
         $("#gemBlue").click(function () {
@@ -101,6 +107,8 @@ $(function () {
             console.log(blueScore);
             totalScore = (totalScore + blueScore);
             $("#totalScore").html(totalScore);
+            console.log("total score is " + totalScore);
+            checkWin();
         });
         //      #gemWhite
         $("#gemWhite").click(function () {
@@ -109,6 +117,8 @@ $(function () {
             console.log(whiteScore);
             totalScore = (totalScore + whiteScore);
             $("#totalScore").html(totalScore);
+            console.log("total score is " + totalScore);
+            checkWin();
         });
         //      #gemYellow
         $("#gemYellow").click(function () {
@@ -117,6 +127,8 @@ $(function () {
             console.log(yellowScore);
             totalScore = (totalScore + yellowScore);
             $("#totalScore").html(totalScore);
+            console.log("total score is " + totalScore);
+            checkWin();
         });
 
         // 4)   Count Wins/Losses & reset game
@@ -125,16 +137,27 @@ $(function () {
             if (totalScore === randNum) {
                 wins++;
                 console.log(wins);
+                // hasFinished = true;
+                $("#wins").html(wins);
+                console.log('you  win');
                 reset();
-                return wins;
-            } if (totalScore > randNum) {
+            }
+
+            if (totalScore > randNum) {
                 losses++;
                 console.log(losses);
+                // hasFinished = true;
+                $("#losses").html(losses);
+                console.log('you  lose');
                 reset();
-                return losses;
             }
         };
-        checkWin();
+
+
+
+        // if (hasFinished = true) {
+        //     reset();
+        //};
     };
     playGame();
 
