@@ -135,9 +135,9 @@ h2 {
     }
 
     img {
-        width: 20px;
-        height: 15px;
-        border: 1px solid black;
+        width: 75px;
+        height: 70px;
+        border: 2px solid black;
     }
 
     #instructions {
@@ -190,9 +190,9 @@ h2 {
     }
 
     img {
-        width: 20px;
-        height: 15px;
-        border: 1px solid black;
+        width: 75px;
+        height: 70px;
+        border: 2px solid black;
     }
 
     #instructions {
@@ -236,5 +236,5 @@ h2 {
         margin-top: 5px;
     }
 
-    
+
 }
