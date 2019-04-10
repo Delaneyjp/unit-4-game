@@ -43,8 +43,16 @@ h1 {
 
 body {
     background-color: silver;
+    min-width: 910px;
 }
 
+.container {
+    min-width: 910px;
+}
+
+.wrapper {
+    min-width: 910px;
+}
 .card {
     background-color: black;
     margin-bottom: 20px;
