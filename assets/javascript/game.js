@@ -46,30 +46,30 @@ $(document).ready(function () {
         function pickBlack() {
             blackAmount = Math.floor((Math.random() * 12) + 1);
             gemArray.push(blackAmount);
-            console.log(blackAmount);
-            console.log(gemArray);
+            // console.log(blackAmount);
+            // console.log(gemArray);
         };
         pickBlack();
 
         function pickBlue() {
             blueAmount = Math.floor((Math.random() * 12) + 1);
             gemArray.push(blueAmount);
-            console.log(blueAmount);
-            console.log(gemArray);
+            // console.log(blueAmount);
+            // console.log(gemArray);
         };
         pickBlue();
         function pickWhite() {
             whiteAmount = Math.floor((Math.random() * 12) + 1);
             gemArray.push(whiteAmount);
-            console.log(whiteAmount);
-            console.log(gemArray);
+            // console.log(whiteAmount);
+            // console.log(gemArray);
         };
         pickWhite();
         function pickYellow() {
             yellowAmount = Math.floor((Math.random() * 12) + 1);
             gemArray.push(yellowAmount);
-            console.log(yellowAmount);
-            console.log(gemArray);
+            // console.log(yellowAmount);
+            // console.log(gemArray);
         };
         pickYellow();
     };
@@ -88,40 +88,40 @@ $(document).ready(function () {
         $("#gemBlack").click(function () {
             gemArray[0]
             var blackScore = gemArray[0];
-            console.log(blackScore);
+            // console.log(blackScore);
             totalScore = (totalScore + blackScore);
             $("#totalScore").html(totalScore);
-            console.log("total score is " + totalScore);
+            // console.log("total score is " + totalScore);
             checkWin();
         });
         //      #gemBlue
         $("#gemBlue").click(function () {
             gemArray[1]
             var blueScore = gemArray[1];
-            console.log(blueScore);
+            // console.log(blueScore);
             totalScore = (totalScore + blueScore);
             $("#totalScore").html(totalScore);
-            console.log("total score is " + totalScore);
+            // console.log("total score is " + totalScore);
             checkWin();
         });
         //      #gemWhite
         $("#gemWhite").click(function () {
             gemArray[2]
             var whiteScore = gemArray[2];
-            console.log(whiteScore);
+            // console.log(whiteScore);
             totalScore = (totalScore + whiteScore);
             $("#totalScore").html(totalScore);
-            console.log("total score is " + totalScore);
+            // console.log("total score is " + totalScore);
             checkWin();
         });
         //      #gemYellow
         $("#gemYellow").click(function () {
             gemArray[3]
             var yellowScore = gemArray[3];
-            console.log(yellowScore);
+            // console.log(yellowScore);
             totalScore = (totalScore + yellowScore);
             $("#totalScore").html(totalScore);
-            console.log("total score is " + totalScore);
+            // console.log("total score is " + totalScore);
             checkWin();
         });
 
@@ -129,20 +129,24 @@ $(document).ready(function () {
         function checkWin() {
             console.log("random number is " + randNum);
             if (totalScore === randNum) {
+                $("#totalScore").html(totalScore);
                 wins++;
-                console.log(wins);
+                // console.log(wins);
                 // hasFinished = true;
                 $("#wins").html(wins);
-                console.log('you  win');
+                // console.log('YOU WIN!');
+                alert('YOU WIN!');
                 reset();
             }
 
             if (totalScore > randNum) {
+                $("#totalScore").html(totalScore);
                 losses++;
-                console.log(losses);
+                // console.log(losses);
                 // hasFinished = true;
                 $("#losses").html(losses);
-                console.log('you  lose');
+                // console.log('YOU LOSE!');
+                alert('YOU LOSE!');
                 reset();
             }
         };
