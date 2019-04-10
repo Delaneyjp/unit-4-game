@@ -1,16 +1,11 @@
+/*
+JUSTIN DELANEY
+HOMEWORK ASSIGNMENT
+UCLA CODING BOOTCAMP
+04/09/2019
+*/
+
 $(document).ready(function () {
-
-
-
-
-
-
-
-
-    // $("#gemBlack").click(adder());
-
-
-    // *****************************************
 
     //Establish Variables
     // var matchNum = randNum;
@@ -87,7 +82,6 @@ $(document).ready(function () {
         wins = "";
         losses = "";
 
-
         // 3)   BUTTON CLICKS (ADD TO TOTAL SCORE)
 
         //      #gemBlack       
@@ -152,12 +146,6 @@ $(document).ready(function () {
                 reset();
             }
         };
-
-
-
-        // if (hasFinished = true) {
-        //     reset();
-        //};
     };
     playGame();
 

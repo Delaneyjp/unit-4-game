@@ -43,16 +43,8 @@ h1 {
 
 body {
     background-color: silver;
-    min-width: 910px;
 }
 
-.container {
-    min-width: 910px;
-}
-
-.wrapper {
-    min-width: 910px;
-}
 .card {
     background-color: black;
     margin-bottom: 20px;
@@ -104,4 +96,104 @@ h2 {
 
 #losses {
     text-decoration: underline;
+}
+
+
+
+
+/* ------------------------------------------------------ */
+
+/* Media Queries */
+@media only screen and (max-width: 1210px) {
+    img {
+        width: 100px;
+        height: 95px;
+        border: 5px solid black;
+    }
+
+}
+@media only screen and (max-width: 945px) {
+    h1 {
+        font-size:50px;
+    }
+
+    img {
+        width: 80px;
+        height: 75px;
+        border: 5px solid black;
+    }
+
+    #instructions {
+        font-size: small;
+        text-align: center;
+    }
+  
+} 
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size:40px;
+    }
+
+    img {
+        width: 65px;
+        height: 60px;
+        border: 4px solid black;
+    }
+
+    #instructions {
+        font-size: small;
+        text-align: center;
+    }
+    
+    #matchNum {
+        font-size: xx-large;
+    }
+
+    .total {
+        font-size: large;
+    }
+
+    .total p {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 330px) {
+    h1 {
+        font-size:40px;
+    }
+
+    img {
+        width: 65px;
+        height: 60px;
+        border: 4px solid black;
+    }
+
+    #instructions {
+        font-size: x-small;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    #matchNum {
+        font-size: xx-large;
+    }
+
+    .total {
+        font-size: large;
+    }
+
+    .total p {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: large;
+    }
+}
 }
