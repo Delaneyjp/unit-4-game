@@ -131,72 +131,71 @@ h2 {
 } 
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size:20px;
+        font-size:15px;
     }
 
     img {
-        width: 40px;
-        height: 35px;
-        border: 3px solid black;
+        width: 30px;
+        height: 25px;
+        border: 2px solid black;
     }
 
     #instructions {
-        font-size: xx-small;
+        font-size: x-small;
     }
 
     h2 {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     #matchNum {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     .total {
-        font-size: large;
+        font-size: medium;
     }
 
     .total p {
-        font-size: large;
+        font-size: medium;
     }
 
     h3 {
-        font-size: large;
+        font-size: medium;
     }
 }
 @media only screen and (max-width: 330px) {
     h1 {
-        font-size:20px;
+        font-size:15px;
     }
 
     img {
-        width: 40px;
-        height: 35px;
-        border: 3px solid black;
+        width: 30px;
+        height: 25px;
+        border: 2px solid black;
     }
 
     #instructions {
-        font-size: xx-small;
+        font-size: x-small;
     }
 
     h2 {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     #matchNum {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     .total {
-        font-size: large;
+        font-size: medium;
     }
 
     .total p {
-        font-size: large;
+        font-size: medium;
     }
 
     h3 {
-        font-size: large;
+        font-size: medium;
     }
-}
 }
